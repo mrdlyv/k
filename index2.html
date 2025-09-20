@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="math"></h2>
+
+    <script>
+        let h2 = document.getElementById('math')
+        let name = +prompt('Adinizi daxil edin')
+        let user = +prompt('Reqem daxil edin')
+        comp = Math.floor(Math.random() * 10)+1
+        console.log(comp);
+        
+
+        if (user == comp) {
+            h2.innerHTML = name , 'qalib geldi'
+        }else {
+            h2.innerHTML = 'Komputer qalib geldi'
+        }
+        
+    </script>
+</body>
+
+</html>
